@@ -21,12 +21,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
   <h1>Welcome to Lotterifics</h1>
-  <div>
-    <button class="sign-button" type="button">Log-in</button>
-    <button class="sign-button" type="button">Register</button>
+  <div class="login">
+    <form class="form-inline" method="POST" action="/login">
+      <input
+        class="form-control"
+        type="username"
+        name="username"
+        placeholder="Username"
+        style="width: 300px; margin: 1em"
+      />
+      <input
+        class="form-control"
+        type="password"
+        name="password"
+        placeholder="Password"
+        style="width: 300px; margin: 1em"
+      />
+      <button type="submit" class="btn btn-primary">Login</button>
+  </form>
   </div>
+  <form class="form-inline" action="/register" method="GET">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
 </body>
 
 </html>
