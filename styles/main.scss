@@ -16,8 +16,35 @@ body {
     rgba(163, 208, 219, 1) 100%
   );
 
-  h1 {
-    color: rgb(223, 161, 28);
-    font-family: 'Permanent Marker', cursive;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 450px;
+    height: 350px;
+    border: 2px solid red;
+    border-radius: 10px;
+
+
+    .form-control {
+      display: block;
+      margin: 0px;
+      margin-bottom: 20px;
+      width: 300px;
+    }
+
+    .form-inline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: rgb(223, 161, 28);
+      font-family: 'Permanent Marker', cursive;
+    }
   }
 }
